@@ -106,9 +106,11 @@
       console.log(colors);
       const hexColors = [];
       const rgbColors = [];
-      // Change code below this line
-    //   const keys = Object.keys(colors);
-    //   for(const key of keys){
-      
-    //   };
-    console.log(colors);
+      for(const key of colors){
+        const key = Object.values(salaries);
+        };
+        for(const value of colors){
+          const values = Object.values(salaries);
+        };
+    console.log(hexColors);
+    console.log(rgbColors);
