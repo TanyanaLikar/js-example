@@ -310,13 +310,150 @@
 // };
 // // Change code below this line
 // const finalSettings = {...defaultSettings, ...overrideSettings};
+// console.log(finalSettings);
 // ================================ Задание 30 модуль3 ================  
-function makeTask(data) {
-  const completed = false;
-  const category = "General";
-  const priority = "Normal";
-  // Change code below this line
+// const data = {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+   
+//   // Change code below this line
+  
+//   // Change code above this line
+//   console.log(c);
+//  непонятно решение!!!!!
+// ================================ Задание 31 модуль3 ================  
+// function add(...args) {
+//   let total = 0;
+//   for ( const key of args){
+//   total += key;
+//   } return total;
+//   // Change code above this line
+// }
+// ================================ Задание 32 модуль3 ================  
+// Функция addOverNum() считает сумму всех аргументов. Измени параметры и тело функции addOverNum() так, чтобы она считала сумму только тех аргументов, которые больше чем заданное число. Это число должно быть первым параметром функции.
+// в фунцкию добавлено значение number;
+//  если arg больше чем это число, то выполняется сумирование всех чилел,которое больше number
+// function addOverNum(number,...args) {
+//   let total = 0;
+//   for (const arg of args) {
+//     if (number < arg){
+//     total += arg;}
+//   }
+//   return total;
+//   // Change code above this line
+// }
+// ================================ Задание 33 модуль3 ================ 
+// function findMatches(array,...args) {
+//   const matches = []; // Don't change this line
+// for(let arg of args){
+//   for (let number of array){
+//     if (arg ===number){
+//       matches.push(arg);}
+//   }
+// } return matches;
+  
+// }
+// variant2
+// function findMatches(array, ...args) {
+//   const matches = []; // Don't change this line
+//   for (const arg of args) {
+//     if (array.includes(arg)) {
+//       matches.push(arg);
+//     }
+//   }
+//   // Change code above this line
+//   return matches;
+// }
+// ================================ Задание 34 модуль3 ================ 
+// const bookShelf = {
+//   // Change code below this line
+//   books: ["The last kingdom", "The guardian of dreams"],
+//   getBooks() {
+//     return "Returning all books";
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
+//   removeBook(bookName){
+//     return `Deleting book ${bookName}`;
+//   },
+//   updateBook(oldName, newName){
+//     return `Updating book ${oldName} to ${newName}`;
+//   },
+//   // Change code above this line
+// };
+// ================================ Задание 35 модуль3 ================
+//  ПРИМЕР
+// const bookShelf = {
+//   books: ["Последнее королевство"],
+//   getBooks() {
+//     return this.books;
+//   },
+//   addBook(bookName) {
+//     this.books.push(bookName);
+    
+//   },
+//   removeBook(bookName) {
+//     const bookIndex = this.books.indexOf(bookName); //indexOf - найти такое название и
+//     this.books.splice(bookIndex, 1);                 //-splice- удалить его  
+                  
+//   },
+// };
 
-  // Change code above this line
-  console.log(makeTask);
-}
+// bookShelf.addBook("Страж снов");
+// bookShelf.addBook("End");
+// console.log(bookShelf.books);
+// bookShelf.removeBook("Последнее королевство");
+// console.log(bookShelf.books);
+// ================================ Задание 35 модуль3 ================
+// const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+//     // Change code below this line
+//     const bookIndex = this.books.indexOf(oldName);
+//     this.books.splice(bookIndex,1, newName); //splice(position, 0, new_element_1) добавление
+//     //splice(bookIndex,1, newName) - bookIndex вместо найденого названия -удалить его (1) и поставить новое имя
+//     // Change code above this line
+//   },
+// };
+// bookShelf.updateBook("The last kingdom", "Dune");
+// console.log(bookShelf.books);
+// ================================ Задание 36 -40 модуль3 ================
+// Добавь объекту atTheOldToad свойство potions, значением которого сделай пустой массив.
+// const atTheOldToad = {
+//   potions:[],
+// }
+// Добавь объекту atTheOldToad метод getPotions(), который просто возвращает значение свойства potions.
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   getPotions(){
+//    this.potions;
+//   }
+// }
+// console.log(atTheOldToad.potions);
+// Дополни метод addPotion(potionName) так, чтобы он добавлял зелье potionName в конец массива зелий в свойстве potions.
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   addPotion(potionName) {
+//     //добавление элемента в масив используем push
+//   this.potions.push(potionName);
+//   },
+// };
+// Дополни метод removePotion(potionName) так, чтобы он удалял зелье potionName из массива зелий в свойстве potions.
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   removePotion(potionName) {
+//     // находим indexOf и удаляем splice значение 
+//     const potionIndex = this.potions.indexOf(potionName);
+//     this.potions.splice(potionIndex,1);    
+//   },
+// };
+// Дополни метод updatePotionName(oldName, newName) так, чтобы он обновлял название зелья с oldName на newName, в массиве зелий в свойстве potions.
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   updatePotionName(oldName, newName) {    
+//     const potionIndex = this.potions.indexOf(oldName);
+//     this.potions.splice(potionIndex,1,newName ); 
+//   },
+// };
