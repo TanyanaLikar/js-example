@@ -97,20 +97,226 @@
     //   countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 })
     //   countTotalSalary({ mango: 100, poly: 150, alfred: 80 })
     //    ============================== задача 16 модуль3================
-    const colors = [
-        { hex: "#f44336", rgb: "244,67,54" },
-        { hex: "#2196f3", rgb: "33,150,243" },
-        { hex: "#4caf50", rgb: "76,175,80" },
-        { hex: "#ffeb3b", rgb: "255,235,59" },
-      ];
-      console.log(colors);
-      const hexColors = [];
-      const rgbColors = [];
-      for(const key of colors){
-        const key = Object.values(salaries);
-        };
-        for(const value of colors){
-          const values = Object.values(salaries);
-        };
-    console.log(hexColors);
-    console.log(rgbColors);
+    // ========================= Верное решение задача 17 модуль3 =================
+    // const colors = [
+    //     { hex: "#f44336", rgb: "244,67,54" },
+    //     { hex: "#2196f3", rgb: "33,150,243" },
+    //     { hex: "#4caf50", rgb: "76,175,80" },
+    //     { hex: "#ffeb3b", rgb: "255,235,59" },
+    //   ];
+    //   console.log(colors);
+    //   const hexColors = [];
+    //   const rgbColors = [];
+    //   for (const color of colors){
+    //     hexColors.push(color.hex);
+    //     rgbColors.push(color.rgb);  
+    //     };
+    // console.log(rgbColors);
+    // console.log(hexColors);
+    //    ============================== задача 17 модуль3================
+    // ========================= Верное решение задача 18 модуль3 =================
+  //   const products = [
+  //     { name: "Radar", price: 1300, quantity: 4 },
+  //     { name: "Scanner", price: 2700, quantity: 3 },
+  //     { name: "Droid", price: 400, quantity: 7 },
+  //     { name: "Grip", price: 1200, quantity: 9 },
+  //   ];
+  //   console.log(products);
+  //   function getProductPrice(productName) {
+  //     // Change code below this line
+  //   for (const product of products){
+  //   if (productName === product.name){
+  //     return product.price
+  //   } else {
+    
+  //   } return null
+  //  }
+  //   }
+  // ========================= Верное решение задача 19 модуль3 =================
+  // const products = [
+  //   { name: "Radar", price: 1300, quantity: 4 },
+  //   { name: "Scanner", price: 2700, quantity: 3 },
+  //   { name: "Droid", price: 400, quantity: 7 },
+  //   { name: "Grip", price: 1200, quantity: 9 },
+  // ];
+   
+  // const propNames = [];
+  //   for (const product of products ){
+  //     if (product[propName]){
+  //       propNames.push(product[propName]);
+  //     }
+   
+  //   }    
+  // console.log(propNames);
+  //   // Change code above this line
+  // ========================= Верное решение Вова Мельник - 20задача обьекты модуль3=================
+    //  const stones = [
+    //     { name: "Изумруд", cost: 1300, quantity: 4 },
+    //     { name: "Бриллиант", cost: 2700, quantity: 3 },
+    //     { name: "Сапфир", cost: 400, quantity: 7 },
+    //     { name: "Щебень", cost: 200, quantity: 2 },
+    //   ];
+      
+     
+      
+    //   function calcTotalPrice(stoneName, stones) {
+    //     let result;
+    //     for (let stone of stones) {
+    //       if (stone.name === stoneName) {
+    //         result = stone.price * stone.quantity;
+    //       }
+    //     }
+    //     return result;
+    //   }
+      
+    //   console.log(calcTotalPrice("Кварц", stones)); // 400
+    //  ================================ Задание 21модуль3 ================
+    // const highTemperatures = {
+    //   yesterday: 28,
+    //   today: 26,
+    //   tomorrow: 33,
+    // };
+    // // Деструктуризация объектов 
+    // // const yesterday = highTemperatures.yesterday;
+    // // const today = highTemperatures.today;
+    // // const tomorrow = highTemperatures.tomorrow;
+    // // По условии задачи - удаляем и проводим упрощение записи ,следующая строчка
+    // const {yesterday,today,tomorrow} = highTemperatures;      
+    
+    // const meanTemperature = (yesterday + today + tomorrow) / 3;
+    // console.log(meanTemperature);
+//  ================================ Задание 22 модуль3 ================
+    // const highTemperatures = {
+    //   yesterday: 28,
+    //   today: 26,
+    //   tomorrow: 33,
+    // };
+    // //  Деструктуризация объектов ++++++++++++++++++
+    // // По условии задачи - удаляем и проводим упрощение записи ,следующая строчка
+    // const {yesterday,today,tomorrow,icon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" } = highTemperatures;
+    // // const yesterday = highTemperatures.yesterday;
+    // // const today = highTemperatures.today;
+    // // const tomorrow = highTemperatures.tomorrow;
+    // // const icon = highTemperatures.icon;
+    
+    // // Change code above this line
+    // const meanTemperature = (yesterday + today + tomorrow) / 3;
+    // console.log(meanTemperature);
+  //  ================================ Задание 24 модуль3 ================  
+  // const colors = [
+  //   { hex: "#f44336", rgb: "244,67,54" },
+  //   { hex: "#2196f3", rgb: "33,150,243" },
+  //   { hex: "#4caf50", rgb: "76,175,80" },
+  //   { hex: "#ffeb3b", rgb: "255,235,59" },
+  // ];
+  
+  // const hexColors = [];
+  // const rgbColors = [];
+  // // Change code below this line
+  
+  // for (const { hex, rgb } of colors) {
+    
+  //   hexColors.push(hex);
+  //   rgbColors.push(rgb);
+  // }
+  //  ================================ Задание 25 модуль3 ================  
+  // Глубокая деструктуризация ++++++++++++++++++
+  // const forecast = {
+  //   today: {
+  //     low: 28,
+  //     high: 32,
+  //     icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+  //   },
+  //   tomorrow: {
+  //     low: 27,
+  //     high: 31,
+  //   },
+  // };
+  // // проведена глубокая деструктуризация и проведена замена переменных - пример:low:lowToday и т.д
+ 
+
+  // // const highToday = forecast.today.high;
+  // // const lowToday = forecast.today.low;
+  // // const todayIcon = forecast.today.icon;
+  
+  // // const highTomorrow = forecast.tomorrow.high;
+  // // const lowTomorrow = forecast.tomorrow.low;
+  // // const tomorrowIcon = forecast.tomorrow.icon;
+  // const {
+  //   today:{low:lowToday,high: highToday,icon:todayIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"},
+  //   tomorrow: {low:lowTomorrow,high:highTomorrow,icon:tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" },
+  // } = forecast;
+//  ================================ Задание 26 модуль3 ================  
+// Паттерн «Объект настроек»+++++++++++++++++
+
+// // Change code below this line
+// function calculateMeanTemperature(forecast) {
+// //  Проведена замена упрощение записи 
+//   // const todayLow = forecast.today.low;
+//   // const todayHigh = forecast.today.high;
+//   // const tomorrowLow = forecast.tomorrow.low;
+//   // const tomorrowHigh = forecast.tomorrow.high;
+//   // перезаписаны todayLow и todayHigh на -today:{low:todayLow,high:todayHigh}
+//   // tomorrowLow и tomorrowHigh на tomorrow:{low:tomorrowLow,high:tomorrowHigh}
+//   const {today:{low:todayLow,high:todayHigh}, 
+//          tomorrow:{low:tomorrowLow,high:tomorrowHigh}} = forecast;
+//     // Change code above this line
+//     return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+//   }
+// ================================ Задание 27 модуль3 ================  
+// Пример -конспект
+// const temps = [14, -4, 25, 8, 11];
+
+// // В консоли будет массив
+// console.log(temps);
+// // ❌ Так не сработает, потому что передаём целый массив
+// console.log(Math.max(temps)); // NaN
+
+// // В консоли будет набор отдельных чисел
+// console.log(...temps);
+// // ✅ Распылим коллекцию элементов как отдельные аргументы
+// console.log(Math.max(...temps)); // 25
+// Задание 27 ----------РЕШЕНИЕ-----------
+// const scores = [89, 64, 42, 17, 93, 51, 26];
+// // Change code below this line
+// const bestScore = Math.max(...scores);
+// const worstScore = Math.min(...scores);
+// console.log(bestScore);
+// console.log(worstScore);
+// ================================ Задание 28 модуль3 ================  
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+// // в allScores соединяем все масивы
+// const allScores = [...firstGroupScores, ...secondGroupScores,...thirdGroupScores];
+// // делаем большое и меньшее значение с нового распыленного масива ...allScores
+// const bestScore = Math.max(...allScores);
+// const worstScore = Math.min(...allScores);
+// console.log(allScores);
+// console.log(bestScore);
+// console.log(worstScore);
+// ================================ Задание 29 модуль3 ================  
+// const defaultSettings = {
+//   theme: "light",
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
+// // Change code below this line
+// const finalSettings = {...defaultSettings, ...overrideSettings};
+// ================================ Задание 30 модуль3 ================  
+function makeTask(data) {
+  const completed = false;
+  const category = "General";
+  const priority = "Normal";
+  // Change code below this line
+
+  // Change code above this line
+  console.log(makeTask);
+}
