@@ -40,22 +40,44 @@
 // console.log(newCar2);
 // ----------------- module 5 work 9--------------//
 
-class Car {
-    constructor({ brand, model, price }) {
-      this.brand = brand;
-      this.model = model;
-      this.price = price;
-    }
+// class Car {
+//     constructor({ brand, model, price }) {
+//       this.brand = brand;
+//       this.model = model;
+//       this.price = price;
+//     }
     
-  getPrice(){
-  return this.price ;
-  }
+//   getPrice(){
+//   return this.price ;
+//   }
   
-  changePrice(newPrice){
-  this.price = newPrice;
-  }
+//   changePrice(newPrice){
+//   this.price = newPrice;
+//   }
     
-}
-new Car({ brand: 'Audi', model: 'Q3', price: 36000 }) 
-console.log(car.getPrice())
-console.log(Car.prototype.hasOwnProperty('changePrice'));
+// }
+// new Car({ brand: 'Audi', model: 'Q3', price: 36000 }) 
+// console.log(car.getPrice())
+// console.log(Car.prototype.hasOwnProperty('changePrice'));
+// ----------------- module 5 work 17--------------//
+// class Car {
+//   static #MAX_PRICE = 50000;
+ 
+//   static  checkPrice(price){
+//   if(price > Car.#MAX_PRICE){
+//   return "Error! Price exceeds the maximum";
+//   } 
+//   return "Success! Price is within acceptable limits"
+//   }
+  
+//   constructor({ price }) {
+//     this.price = price;
+//   }
+// }
+
+// const audi = new Car({ price: 36000 });
+// const bmw = new Car({ price: 64000 });
+
+// console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
+// console.log(Car.checkPrice(bmw.price));
+// ----------------- module 5 work 18--------------//
